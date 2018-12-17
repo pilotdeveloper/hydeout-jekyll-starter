@@ -4,6 +4,12 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: jekyll-pages
+  label: Search
+  create: all
+  match: "**/*"
+  templates:
+  - search
 - type: document
   path: FIRSTSTEPS.md
   label: Welcome - Start Here!
